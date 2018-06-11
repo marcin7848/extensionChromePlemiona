@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <body>
+        <center><b><a href="index.php">Menu</a></b></center>
+        <center><b><!--ERROR--></b></center>
+        <table cellpadding='5' border='3' align='center'>
+            <form action="?lista_wiosek" method="POST">
+            <tr align='center'>
+                <td colspan="2">Sterowanie</td>
+            </tr>
+            <tr align='center'>
+                <td>ID glownej wioski: <input type="text" name="id_glownej_wioski" maxlength="255" size="10">
+                        <br />
+                        Aktualne ID: <!--ID_GLOWNEJ_WIOSKI-->
+                </td>
+                <td><input type="submit" name="add_glowna" value="Aktualizuj ID glownej wioski"></td>
+            </tr>
+            <tr align='center'>
+                <td>ID Wioski: <input type="text" name="id_wioski" maxlength="255" size="10"></td>
+                <td><input type="submit" name="add" value="Dodaj wioske!"></td>
+            </tr>
+            <tr align='center'>
+                <td><input type="submit" name="delete_all_wioski" value="Usun wszystkie wioski!"></td>
+                <td><input type="submit" name="add_auto_wioski" value="Dodaj automatycznie wszystkie wioski!"></td>
+            </tr>
+            </form>
+        </table>
+        <table cellpadding='5' border='3' align='center'>
+            <tr align='center'>
+                <td colspan="5">Lista wiosek</td>
+            </tr>
+            <tr align='center'>
+                <td>ID</td>
+                <td>ID wioski</td>
+                <td>Nazwa</td>
+                <td>Polozenie</td>
+                <td>Usun</td>
+            </tr>
+            <!--LISTA_WIOSEK-->
+        </table>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+	<head>
+	<title>Wtyczka do Plemion!</title>
+		<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/manageBotStartMenu.js"></script>
+		<script type="text/javascript" src="js/manageBotButtonsMenu.js"></script>
+	</head>
+	<body>
+		<div id="menu">
+			<div id="error"></div>
+			<div id="main_words">Zarządzanie botem Plemiona!</div>
+			<div id="div_bot_on">
+				<div id="text_bot_on"></div>
+			</div>
+			<div id="glowne_ustawienia">
+				Username: <input type='text' id='username' value='' size='10' maxlength='20'><br />
+				Haslo: <input type='password' id='password' value='' size='10' maxlength='20'><br />
+				Nr swiata: <input type='text' id='nr_swiata' value='' size='5' maxlength='20'><br />
+				ID glownej wioski: <input type='text' id='id_glownej_wioski' value='' size='6' maxlength='20'><br />
+				Czas OFF Bota: <input type='text' id='time_bot_off' value='' size='10' maxlength='255'><br />
+				Czas ON Premium Wioski: <input type='text' id='time_wioski_premium' value='' size='10' maxlength='255'><br />
+				Oba czasy w formacie: "5:00-8:00,10:00-11:00"<br />
+				Czas OFF Bota - czas niedziałania wysyłania farmy (wpisz 0->cały czas online)<br />
+				Czas ON Premium Wioski - czas rozwiajania i sprzedawania surowców w wioskach premium (0->brak sprzedaży)<br />
+				<input type='submit' id='zapisz_glowne' value="Zapisz" />
+			</div>
+			<br />
+			<div class='buttony'>
+				<div class='manageButton' id='lista_wiosek'>
+					Lista Wiosek
+				</div>
+				<div class='manageButton' id='farma'>
+					Farma
+				</div>
+				<div class='manageButton' id='premium_points'>
+					Punkty premium
+				</div>
+				<div class='manageButton' id='wioski_premium'>
+					Wioski premium
+				</div>
+			</div>
+		 	<br />
+			<div class='board'>
+				<!--wstrzykiwana tresc po nacisnieciu-->
+			</div>
+		</div>
+	</body>
+</html>

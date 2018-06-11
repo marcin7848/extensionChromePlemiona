@@ -1,0 +1,43 @@
+{
+"manifest_version": 2,
+"name": "WtyczkaPlemiona",
+"description": "WtyczkaPlemionaDescr",
+"version": "1.0",
+"icons": {
+"128": "img/icon.png"
+},
+
+        "browser_action": {
+          "default_icon": {                              
+            "32": "img/32.png"            
+          },
+          "default_title": "WtyczkaPlemiona",      
+          "default_popup": "popup.html"       
+        },
+
+
+  "background": {
+      "page": "background.html",
+      "persistent": false
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["http://*/", "https://*/"],
+        "js": [
+          "js/jquery-3.2.1.js"
+        ]
+      }
+    ],
+
+  "permissions": [
+  "unlimitedStorage",
+  "tabs",
+    "activeTab",
+    "browsingData",
+  "notifications",
+  "webNavigation",
+  "http://*/",
+  "https://*/"
+  ]
+}
